@@ -1,0 +1,122 @@
+.settings {
+  background-color: #ffffff;
+  width: 40%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.settings-scroll {
+  scrollbar-width: thin;
+  height: 597px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.status-personal {
+  scrollbar-width: thin;
+  height: 597px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #f0f2f5;
+}
+
+.settings .settings-container {
+  padding: 14px 15px 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.settings-container .settings-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.settings-container .settings-plus-icon {
+  height: 24px;
+  cursor: pointer;
+}
+
+.settings .search-container {
+  padding: 3px 10px 8px 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-container .search-icon {
+  height: 16px;
+  position: absolute;
+  left: 28px;
+}
+
+.search-container .search-box {
+  background-color: #f0f2f5;
+  height: 40px;
+  width: 410px;
+  min-width: 280px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 75px;
+  font-size: 15px;
+}
+
+.profile-settings {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 5px 15px 20px;
+  cursor: pointer;
+}
+
+.sub-settings {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+  padding: 20px 30px 25px 30px;
+}
+
+.sub-settings:hover {
+  background-color: #f0f2f5;
+}
+
+.profile-settings .profile-image {
+  height: 90px;
+  border-radius: 50px;
+}
+
+.sub-settings .profile-icon {
+  height: 20px;
+}
+
+.chat {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.sub-settings .icon-log {
+  filter: invert(24%) sepia(100%) saturate(7493%) hue-rotate(-4deg)
+    brightness(95%) contrast(104%);
+}
+
+.barce-names {
+  color: red;
+}
+
+.profile-settings .settings-name .add-settings-day {
+  font-size: 14px;
+  color: #0000009d;
+}
+
+div .horizontal-rule-settings {
+  margin-left: 81px;
+  background-color: #f0f2f5;
+  height: 0.1px;
+  border: none;
+}

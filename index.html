@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Clone</title>
+
+    <!-- WhatsApp Logo -->
+    <link
+      rel="shortcut icon"
+      href="Assets/images/whatsapp.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="chathistory.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="chatsection.css" />
+    <link rel="stylesheet" href="statushistory.css" />
+    <link rel="stylesheet" href="channels.css" />
+    <link rel="stylesheet" href="settings.css" />
+    <link rel="stylesheet" href="business.css" />
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="advertise.css" />
+    <link rel="stylesheet" href="communities.css" />
+
+    <!-- <script src="script.js"></script> -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section class="fullpage">
+      <div class="upbody"></div>
+      <div class="downbody"></div>
+      <div class="main-body-container">
+        <div class="sidebar">
+          <div class="sidebar-icon" id="chatIcon">
+            <img
+              class="chats-icon chat"
+              src="Assets/images/whats chats.png"
+              alt=""
+            />
+            <div class="tool-icon" id="tool-icon-one"></div>
+            <div class="tool-text">Chats</div>
+            <div class="tool-number">1</div>
+          </div>
+          
+          <div class="sidebar-icon" id="statusIcon">
+            <img class="chats-icon" src="Assets/images/status.png" alt="" />
+            <div class="tool-icon" id="tool-icon" style="display: none;"></div>
+            <div class="tool-text">Status</div>
+            <div class="tool-dot"></div>
+          </div>
+
+          <div class="sidebar-icon" id="channelsIcon">
+            <img
+              class="chats-icon"
+              src="Assets/images/social-media.png"
+              alt=""
+            />
+            <div class="tool-icon" id="tool-icon-two" style="display: none;"></div>
+            <div class="tool-text">Channels</div>
+            <div class="tool-dot"></div>
+          </div>
+          <div class="sidebar-icon" id="communitiesIcon">
+            <img class="chats-icon" src="Assets/images/group.png" alt="" />
+            <div class="tool-icon" id="tool-icon-three" style="display: none;"></div>
+            <div class="tool-text">Communities</div>
+          </div>
+          <hr class="horizontal-rules" />
+          <div class="sidebar-icon" id="businessIcon">
+            <img
+              class="chats-icon"
+              src="Assets/images/whats chats.png"
+              alt=""
+            />
+            <div class="tool-icon" id="tool-icon-four" style="display: none;"></div>
+            <div class="tool-text">Tools</div>
+          </div>
+          <div class="sidebar-icon" id="advertIcon">
+            <img class="chats-icon" src="Assets/images/megaphone.png" alt="" />
+            <div class="tool-icon" id="tool-icon-five" style="display: none;"></div>
+            <div class="tool-text">Advert on facebook</div>
+          </div>
+
+          <div class="sidebar-extention">
+            <div class="sidebar-extention-icon" id="settingsIcon">
+              <img class="chats-icon" src="Assets/images/settings.png" alt="" />
+              <div class="tool-text">Settings</div>
+            </div>
+            <div class="sidebar-extention-icon" id="profileIcon">
+              <img class="profile" src="images/profile.png" alt="" />
+              <div class="tool-text text-profile">Profile</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chats Html -->
+        <div class="chat-history chats active">
+          <div class="chat-container">
+            <h2>Chats</h2>
+            <div class="chat-icon-container">
+              <img
+                class="chat-history-img"
+                src="Assets/images/new-chat.png"
+                alt=""
+              />
+              <img
+                class="chat-history-img"
+                src="Assets/images/dots.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="search-container-extention">
+            <div class="search-container">
+              <input class="search-box" type="text" placeholder="Search" />
+              <img class="search-icon" src="Assets/images/search.png" alt="" />
+            </div>
+          </div>
+          <div class="chat-history-text">
+            <p class="history-text">All</p>
+            <p class="history-text">Unread</p>
+            <p class="history-text">Groups</p>
+          </div>
+          <div class="notification-extension">
+            <div class="notification-container">
+              <div class="notification-icon-container">
+                <img
+                  class="notification-icon"
+                  src="Assets/images/notification-bell.png"
+                  alt=""
+                />
+                <div class="notification-tool"></div>
+              </div>
+              <div class="notification-text-container">
+                <p class="notification-text">Turn on notifications</p>
+                <p class="notification-text">
+                  Get notified of new messages on your computer.
+                </p>
+                <p class="notification-text">Turn on desktop notifications ></p>
+              </div>
+              <img
+                class="notification-icon"
+                src="Assets/images/cancel.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="chat-personal">
+            <div class="chat-techtutor">
+              <img class="techtutor-image" src="images/techtutor.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">+234 703 536 5907</p>
+                  <p class="techtutor-time">10:21 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  This is the start date for frontend Web Development
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/we code.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">My friends & I 💯</p>
+                  <p class="techtutor-time">9:44 am</p>
+                </div>
+                <p class="techtutor-brief-chat">✓✓ You: bro</p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor">
+              <img class="techtutor-image" src="images/no profile.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">Web development (traning)</p>
+                  <p class="techtutor-time">9:36 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  ~ Damsonspecial enterprise: Who be this one?
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/doris.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">+234 802 725 6424</p>
+                  <p class="techtutor-time">9:22 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  ✓✓Please whats happening, this thing is taking longe...
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/no profile.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">SCHOOL FEES RECORD</p>
+                  <p class="techtutor-time">8:42 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  Caf: List of School fees Debtors for 2023/2024 Third...
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/sama.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">SAMA FC SUNDAY TEAM ⚽</p>
+                  <p class="techtutor-time">7:54 am</p>
+                </div>
+                <p class="techtutor-brief-chat">~ Onana Jnr: 🖼️Sticker</p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/techtutor.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">+234 703 536 5907</p>
+                  <p class="techtutor-time">10:21 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  This is the start date for frontend Web Development
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/we code.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">My friends & I 💯</p>
+                  <p class="techtutor-time">9:44 am</p>
+                </div>
+                <p class="techtutor-brief-chat">✓✓ You: bro</p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/no profile.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">Web development (traning)</p>
+                  <p class="techtutor-time">9:36 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  ~ Damsonspecial enterprise: Who be this one?
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/doris.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">+234 802 725 6424</p>
+                  <p class="techtutor-time">9:22 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  ✓✓Please whats happening, this thing is taking longe...
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/no profile.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">SCHOOL FEES RECORD</p>
+                  <p class="techtutor-time">8:42 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  Caf: List of School fees Debtors for 2023/2024 Third...
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/sama.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">SAMA FC SUNDAY TEAM ⚽</p>
+                  <p class="techtutor-time">7:54 am</p>
+                </div>
+                <p class="techtutor-brief-chat">~ Onana Jnr: 🖼️Sticker</p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/techtutor.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">+234 703 536 5907</p>
+                  <p class="techtutor-time">10:21 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  This is the start date for frontend Web Development
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/we code.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">My friends & I 💯</p>
+                  <p class="techtutor-time">9:44 am</p>
+                </div>
+                <p class="techtutor-brief-chat">✓✓ You: bro</p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/no profile.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">Web development (traning)</p>
+                  <p class="techtutor-time">9:36 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  ~ Damsonspecial enterprise: Who be this one?
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/doris.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">+234 802 725 6424</p>
+                  <p class="techtutor-time">9:22 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  ✓✓Please whats happening, this thing is taking longe...
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/no profile.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">SCHOOL FEES RECORD</p>
+                  <p class="techtutor-time">8:42 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  Caf: List of School fees Debtors for 2023/2024 Third...
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/sama.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">SAMA FC SUNDAY TEAM ⚽</p>
+                  <p class="techtutor-time">7:54 am</p>
+                </div>
+                <p class="techtutor-brief-chat">~ Onana Jnr: 🖼️Sticker</p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/techtutor.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">+234 703 536 5907</p>
+                  <p class="techtutor-time">10:21 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  This is the start date for frontend Web Development
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/we code.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">My friends & I 💯</p>
+                  <p class="techtutor-time">9:44 am</p>
+                </div>
+                <p class="techtutor-brief-chat">✓✓ You: bro</p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/no profile.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">Web development (traning)</p>
+                  <p class="techtutor-time">9:36 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  ~ Damsonspecial enterprise: Who be this one?
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/doris.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">+234 802 725 6424</p>
+                  <p class="techtutor-time">9:22 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  ✓✓Please whats happening, this thing is taking longe...
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/no profile.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">SCHOOL FEES RECORD</p>
+                  <p class="techtutor-time">8:42 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  Caf: List of School fees Debtors for 2023/2024 Third...
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/sama.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">SAMA FC SUNDAY TEAM ⚽</p>
+                  <p class="techtutor-time">7:54 am</p>
+                </div>
+                <p class="techtutor-brief-chat">~ Onana Jnr: 🖼️Sticker</p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/techtutor.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">+234 703 536 5907</p>
+                  <p class="techtutor-time">10:21 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  This is the start date for frontend Web Development
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/we code.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">My friends & I 💯</p>
+                  <p class="techtutor-time">9:44 am</p>
+                </div>
+                <p class="techtutor-brief-chat">✓✓ You: bro</p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/no profile.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">Web development (traning)</p>
+                  <p class="techtutor-time">9:36 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  ~ Damsonspecial enterprise: Who be this one?
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/doris.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">+234 802 725 6424</p>
+                  <p class="techtutor-time">9:22 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  ✓✓Please whats happening, this thing is taking longe...
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/no profile.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">SCHOOL FEES RECORD</p>
+                  <p class="techtutor-time">8:42 am</p>
+                </div>
+                <p class="techtutor-brief-chat">
+                  Caf: List of School fees Debtors for 2023/2024 Third...
+                </p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/sama.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">SAMA FC SUNDAY TEAM ⚽</p>
+                  <p class="techtutor-time">7:54 am</p>
+                </div>
+                <p class="techtutor-brief-chat">~ Onana Jnr: 🖼️Sticker</p>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+          </div>
+        </div>
+
+        <!-- Status Html -->
+        <div class="status-history chats" style="display: none;">
+          <div class="status-container">
+            <h2>Status</h2>
+            <div class="status-icon-container">
+              <img
+                class="status-plus-icon"
+                src="Assets/images/plus-sign.png"
+                alt=""
+              />
+              <img
+                class="status-dot-icon"
+                src="Assets/images/dots.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="status-personal">
+            <div class="all-status-container">
+              <div class="my-status">
+                <div class="profile-container">
+                  <img class="profile-image" src="images/profile.png" alt="" />
+                  <div class="plus-tool">+</div>
+                </div>
+                <div class="status-name-container">
+                  <p class="status-name">My status</p>
+                  <p class="add-status-day">Click to add status update</p>
+                </div>
+              </div>
+
+              <div class="status-space"></div>
+
+              <div class="other-status-container">
+                <div class="other-status">
+                  <p class="recent-status">RECENT</p>
+                  <hr class="horizontal-rule-status" />
+
+                  <div class="status-update">
+                    <img class="profile-image" src="images/doris.png" alt="" />
+
+                    <div class="status-update-container">
+                      <p class="status-name">Doris</p>
+                      <p class="add-status-day">Today at 1:04 pm</p>
+                    </div>
+                  </div>
+                  <hr class="horizontal-rule-status" />
+
+                  <div class="status-update">
+                    <img
+                      class="profile-image"
+                      src="images/nebiant.png"
+                      alt=""
+                    />
+
+                    <div class="status-update-container">
+                      <p class="status-name">Nebiant Tech</p>
+                      <p class="add-status-day">Today at 12:13 pm</p>
+                    </div>
+                  </div>
+                  <hr class="horizontal-rule-status" />
+
+                  <div class="status-update">
+                    <img
+                      class="profile-image"
+                      src="images/no profile.png"
+                      alt=""
+                    />
+
+                    <div class="status-update-container">
+                      <p class="status-name">Unknown</p>
+                      <p class="add-status-day">Today at 11:57 am</p>
+                    </div>
+                  </div>
+                  <hr class="horizontal-rule-status" />
+
+                  <div class="status-update">
+                    <img class="profile-image" src="images/sama.png" alt="" />
+
+                    <div class="status-update-container">
+                      <p class="status-name">Sama FC</p>
+                      <p class="add-status-day">Today at 11:30 am</p>
+                    </div>
+                  </div>
+                  <hr class="horizontal-rule-status" />
+
+                  <div class="status-update">
+                    <img
+                      class="profile-image"
+                      src="images/techtutor.png"
+                      alt=""
+                    />
+
+                    <div class="status-update-container">
+                      <p class="status-name">Tech Tutor</p>
+                      <p class="add-status-day">Today at 11:04 pm</p>
+                    </div>
+                  </div>
+                  <hr class="horizontal-rule-status" />
+
+                  <div class="status-update">
+                    <img
+                      class="profile-image"
+                      src="images/we code.png"
+                      alt=""
+                    />
+
+                    <div class="status-update-container">
+                      <p class="status-name">We Code</p>
+                      <p class="add-status-day">Today at 10:41 am</p>
+                    </div>
+                  </div>
+                  <hr class="horizontal-rule-status" />
+
+                  <div class="status-update">
+                    <img class="profile-image" src="images/doris.png" alt="" />
+
+                    <div class="status-update-container">
+                      <p class="status-name">Doris</p>
+                      <p class="add-status-day">Today at 1:04 pm</p>
+                    </div>
+                  </div>
+                  <hr class="horizontal-rule-status" />
+
+                  <div class="status-update">
+                    <img
+                      class="profile-image"
+                      src="images/nebiant.png"
+                      alt=""
+                    />
+
+                    <div class="status-update-container">
+                      <p class="status-name">Nebiant Tech</p>
+                      <p class="add-status-day">Today at 12:13 pm</p>
+                    </div>
+                  </div>
+                  <hr class="horizontal-rule-status" />
+
+                  <div class="status-update">
+                    <img
+                      class="profile-image"
+                      src="images/no profile.png"
+                      alt=""
+                    />
+
+                    <div class="status-update-container">
+                      <p class="status-name">Unknown</p>
+                      <p class="add-status-day">Today at 11:57 am</p>
+                    </div>
+                  </div>
+                  <hr class="horizontal-rule-status" />
+
+                  <div class="status-update">
+                    <img class="profile-image" src="images/sama.png" alt="" />
+
+                    <div class="status-update-container">
+                      <p class="status-name">Sama FC</p>
+                      <p class="add-status-day">Today at 11:30 am</p>
+                    </div>
+                  </div>
+                  <hr class="horizontal-rule-status" />
+
+                  <div class="status-update">
+                    <img
+                      class="profile-image"
+                      src="images/techtutor.png"
+                      alt=""
+                    />
+
+                    <div class="status-update-container">
+                      <p class="status-name">Tech Tutor</p>
+                      <p class="add-status-day">Today at 11:04 pm</p>
+                    </div>
+                  </div>
+                  <hr class="horizontal-rule-status" />
+
+                  <div class="status-update">
+                    <img
+                      class="profile-image"
+                      src="images/we code.png"
+                      alt=""
+                    />
+
+                    <div class="status-update-container">
+                      <p class="status-name">We Code</p>
+                      <p class="add-status-day">Today at 10:41 am</p>
+                    </div>
+                  </div>
+                  <hr class="horizontal-rule-status" />
+                </div>
+              </div>
+            </div>
+            <!-- <hr class="horizontal-rule">
+            <div class="chat-techtutor techtutor">
+              <img class="techtutor-image" src="images/we code.png" alt="" />
+              <div class="techtutor-container">
+                <div class="techtutor-number-container">
+                  <p class="techtutor-number">My friends & I 💯</p>
+                  <p class="techtutor-time">9:44 am</p>
+                </div>
+                <p class="techtutor-brief-chat">✓✓ You: bro</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Channels Html -->
+        <div class="channels chats" style="display: none;">
+          <div class="channels-container">
+            <h2>Channels</h2>
+            <div class="channels-icon-container">
+              <img
+                class="channels-plus-icon"
+                src="Assets/images/plus-sign.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="search-container-extention">
+            <div class="search-container">
+              <input class="search-box" type="text" placeholder="Search" />
+              <img class="search-icon" src="Assets/images/search.png" alt="" />
+            </div>
+          </div>
+
+          <div class="barce-channels">
+            <div class="profile-container">
+              <img class="barce-image" src="images/barcelona.jpeg" alt="" />
+            </div>
+            <div class="channels-name">
+              <p class="barce-name">FC Barcelona</p>
+              <p class="add-channels-day">📷 LY19 in Madrid</p>
+            </div>
+          </div>
+
+          <p class="channels-find">Find channels to follow</p>
+
+          <div class="barce-channels holder">
+            <div class="profile-container">
+              <img class="barce-image" src="images/Tems.jpeg" alt="" />
+            </div>
+            <div class="barce-holder-container">
+              <div class="channels-name">
+                <div class="holder-channels-name">
+                  <p class="barce-name">TEMS</p>
+                  <img class="verify" src="Assets/images/verify.png" alt="" />
+                </div>
+                <p class="add-channels-day">66k followers</p>
+              </div>
+              <p class="tems-follow">Follow</p>
+            </div>
+          </div>
+
+          <hr class="horizontal-rule-channels" />
+          <div class="barce-channels holder">
+            <div class="profile-container">
+              <img class="barce-image" src="images/juventus.jpeg" alt="" />
+            </div>
+            <div class="barce-holder-container">
+              <div class="channels-name">
+                <div class="holder-channels-name">
+                  <p class="barce-name">JUVENTUS FC</p>
+                  <img class="verify" src="Assets/images/verify.png" alt="" />
+                </div>
+                <p class="add-channels-day">111.6k followers</p>
+              </div>
+              <p class="channels-follow">Follow</p>
+            </div>
+          </div>
+
+          <hr class="horizontal-rule-channels" />
+          <div class="barce-channels holder">
+            <div class="profile-container">
+              <img class="barce-image" src="images/bbc.jpeg" alt="" />
+            </div>
+            <div class="barce-holder-container">
+              <div class="channels-name">
+                <div class="holder-channels-name">
+                  <p class="barce-name">BBC</p>
+                  <img class="verify" src="Assets/images/verify.png" alt="" />
+                </div>
+                <p class="add-channels-day">202k followers</p>
+              </div>
+              <p class="bbc-follow">Follow</p>
+            </div>
+          </div>
+
+          <hr class="horizontal-rule-channels" />
+          <div class="barce-channels holder">
+            <div class="profile-container">
+              <img class="barce-image" src="images/Ruggedman.jpeg" alt="" />
+            </div>
+            <div class="barce-holder-container">
+              <div class="channels-name">
+                <div class="holder-channels-name">
+                  <p class="barce-name">RUGGEDMAN</p>
+                  <img class="verify" src="Assets/images/verify.png" alt="" />
+                </div>
+                <p class="add-channels-day">57k followers</p>
+              </div>
+              <p class="rugged-follow">Follow</p>
+            </div>
+          </div>
+
+          <p class="channels-discover">Discover more</p>
+        </div>
+
+        <!-- Communities Html -->
+        <div class="communities status chats" style="display: none;">
+          <div class="communities-container">
+            <h2>Communities</h2>
+          </div>
+          <div class="communities-personal">
+            <div class="all-communities-container">
+              <div class="my-communities">
+                <div class="profile-communities-container">
+                  <img
+                    class="profile-image"
+                    src="images/Screenshot 2024-10-29 101111.png"
+                    alt=""
+                  />
+                </div>
+                <div class="communities-name-container">
+                  <p class="communities-name">Gurudemy Force COMMUNI...</p>
+                </div>
+              </div>
+
+              <div class="communities-announcements">
+                <img src="Assets/images/notification-bell.png" alt="" />
+                <div class="announcements-container">
+                  <div class="announcements-wrap">
+                    <p class="annoucement">Announcements</p>
+                    <p class="dates">05/05/2023</p>
+                  </div>
+                  <p class="number">+234 902 192 8852 left</p>
+                </div>
+              </div>
+              <hr class="horizontal-rule-annoucement" />
+
+              <div class="communities-announcements two">
+                <img src="images/Screenshot 2024-10-29 101111.png" alt="" />
+                <div class="announcements-container">
+                  <div class="announcements-wrap-two">
+                    <p class="annoucement">Product Design Gen..</p>
+                    <p class="dates">Tuesday</p>
+                  </div>
+                  <p class="number">You joined from the community</p>
+                </div>
+              </div>
+              <hr class="horizontal-rule-annoucement" />
+
+              <div class="communities-announcements view">
+                <p class="annoucement">View all</p>
+              </div>
+
+              <div class="status-space"></div>
+
+              <div class="my-communities">
+                <div class="profile-communities-container">
+                  <img
+                    class="profile-image"
+                    src="images/no profile.png"
+                    alt=""
+                  />
+                </div>
+                <div class="communities-name-container">
+                  <p class="communities-name">Cophild Python Online</p>
+                </div>
+              </div>
+
+              <div class="communities-announcements">
+                <img src="Assets/images/notification-bell.png" alt="" />
+                <div class="announcements-container">
+                  <div class="announcements-wrap">
+                    <p class="annoucement">Announcements</p>
+                    <p class="dates">04/06/2024</p>
+                  </div>
+                  <p class="number">~Joelwry: good evening to u all.</p>
+                </div>
+              </div>
+              <hr class="horizontal-rule-annoucement" />
+
+              <div class="communities-announcements view">
+                <p class="annoucement">View all</p>
+              </div>
+
+              <div class="status-space"></div>
+
+              <div class="my-communities">
+                <div class="profile-communities-container">
+                  <img
+                    class="profile-image"
+                    src="images/no profile.png"
+                    alt=""
+                  />
+                </div>
+                <div class="communities-name-container">
+                  <p class="communities-name">The Resilient</p>
+                </div>
+              </div>
+
+              <div class="communities-announcements">
+                <img src="Assets/images/notification-bell.png" alt="" />
+                <div class="announcements-container">
+                  <div class="announcements-wrap">
+                    <p class="annoucement">Announcements</p>
+                    <p class="dates">07/05/2023</p>
+                  </div>
+                  <p class="number">Lion: Testing 123.</p>
+                </div>
+              </div>
+              <hr class="horizontal-rule-annoucement" />
+
+              <div class="communities-announcements two">
+                <img src="images/yaba tech.jpg" alt="" />
+                <div class="announcements-container">
+                  <div class="announcements-wrap-two">
+                    <p class="annoucement">YCT COM SCI A..</p>
+                    <p class="dates">22/05/2024</p>
+                  </div>
+                  <p class="number">+234 808 503 8476 joined from</p>
+                </div>
+              </div>
+              <hr class="horizontal-rule-annoucement" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Business Tool Html -->
+        <div class="business chats" style="display: none;">
+          <div class="business-container">
+            <h2>Business tools</h2>
+          </div>
+
+          <p class="tools-business">Business tools</p>
+          <div class="barce-business">
+            <div class="profile-container">
+              <img
+                class="business-image"
+                src="Assets/images/catalogue.png"
+                alt=""
+              />
+            </div>
+            <div class="business-name">
+              <p class="barce-name">Business profile</p>
+              <p class="add-business-day">Manage address, hours and website</p>
+            </div>
+          </div>
+          <hr class="business-hr" />
+
+          <p class="tools-business">Reach more customers</p>
+          <div class="barce-business">
+            <div class="profile-container">
+              <img
+                class="business-image"
+                src="Assets/images/megaphone.png"
+                alt=""
+              />
+            </div>
+            <div class="business-name">
+              <p class="barce-name">Advertise</p>
+              <p class="add-business-day">Create ads that lead to WhatsApp</p>
+            </div>
+          </div>
+          <hr />
+
+          <p class="tools-business">Messaging</p>
+          <div class="barce-business">
+            <div class="profile-container">
+              <img
+                class="business-image"
+                src="Assets/images/megaphone.png"
+                alt=""
+              />
+            </div>
+            <div class="business-name">
+              <p class="barce-name">Quick replies</p>
+              <p class="add-business-day">Reuse frequent messages</p>
+            </div>
+          </div>
+          <div class="barce-business">
+            <div class="profile-container">
+              <img
+                class="business-image"
+                src="Assets/images/megaphone.png"
+                alt=""
+              />
+            </div>
+            <div class="business-name">
+              <p class="barce-name">Labels</p>
+              <p class="add-business-day">Organise chats and customers</p>
+            </div>
+          </div>
+          <hr />
+
+          <div class="barce-business">
+            <div class="profile-container">
+              <img
+                class="business-image"
+                src="Assets/images/megaphone.png"
+                alt=""
+              />
+            </div>
+            <div class="business-name">
+              <p class="barce-name">Business help center</p>
+              <p class="add-business-day">Get help, contact us</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Settings Html -->
+        <div class="settings chats" style="display: none;">
+          <div class="settings-container">
+            <h2>Settings</h2>
+          </div>
+
+          <div class="search-container-extention">
+            <div class="search-container">
+              <input
+                class="search-box"
+                type="text"
+                placeholder="Search settings"
+              />
+              <img class="search-icon" src="Assets/images/search.png" alt="" />
+            </div>
+          </div>
+
+          <div class="settings-scroll">
+            <div class="profile-settings">
+              <img class="profile-image" src="images/profile.png" alt="" />
+              <div class="settings-name">
+                <p class="profile-name">Valiant Design</p>
+                <p class="add-settings-day">Available</p>
+              </div>
+            </div>
+
+            <div class="sub-settings">
+              <img
+                class="profile-icon"
+                src="Assets/images/catalogue.png"
+                alt=""
+              />
+              <p class="barce-name">Business tools</p>
+            </div>
+            <div><hr class="horizontal-rule-settings" /></div>
+
+            <div class="sub-settings">
+              <img
+                class="profile-icon"
+                src="Assets/images/account.png"
+                alt=""
+              />
+              <p class="barce-name">Account</p>
+            </div>
+            <div><hr class="horizontal-rule-settings" /></div>
+
+            <div class="sub-settings">
+              <img
+                class="profile-icon"
+                src="Assets/images/padlock.png"
+                alt=""
+              />
+              <p class="barce-name">Privacy</p>
+            </div>
+            <div><hr class="horizontal-rule-settings" /></div>
+
+            <div class="sub-settings">
+              <img
+                class="profile-icon chat"
+                src="Assets/images/chats.png"
+                alt=""
+              />
+              <p class="barce-name">Chats</p>
+            </div>
+            <div><hr class="horizontal-rule-settings" /></div>
+
+            <div class="sub-settings">
+              <img
+                class="profile-icon"
+                src="Assets/images/notification-bell.png"
+                alt=""
+              />
+              <p class="barce-name">Notifications</p>
+            </div>
+            <div><hr class="horizontal-rule-settings" /></div>
+
+            <div class="sub-settings">
+              <img
+                class="profile-icon"
+                src="Assets/images//verify black.png"
+                alt=""
+              />
+              <p class="barce-name">Keyboard shortcuts</p>
+            </div>
+            <div><hr class="horizontal-rule-settings" /></div>
+
+            <div class="sub-settings">
+              <img
+                class="profile-icon"
+                src="Assets/images/help-web-button.png"
+                alt=""
+              />
+              <p class="barce-name">Help</p>
+            </div>
+            <div><hr class="horizontal-rule-settings" /></div>
+
+            <div class="sub-settings">
+              <img
+                class="profile-icon icon-log"
+                src="Assets/images/exit.png"
+                alt=""
+              />
+              <p class="barce-names">Log out</p>
+            </div>
+            <div><hr class="horizontal-rule-settings" /></div>
+          </div>
+        </div>
+
+        <!-- Profile Html -->
+        <div class="profiles chats" style="display: none;">
+          <div class="profiles-container">
+            <h2>Profile</h2>
+          </div>
+
+          <div class="profiles-scroll">
+            <div class="profiles-background">
+              <img class="profiles-image" src="images/profile.png" alt="" />
+              <img class="profiles-dots" src="Assets/images/PEN.png" alt="" />
+            </div>
+
+            <div class="profiles-info-container">
+              <div class="profile-profiles">
+                <img class="profiles-image" src="Assets/images/VD.png" alt="" />
+                <div class="settings-names">
+                  <p class="profiles-name">Valiant Design</p>
+                </div>
+              </div>
+
+              <div class="profile-profiles">
+                <img
+                  class="profiles-image"
+                  src="Assets/images/CALL.png"
+                  alt=""
+                />
+                <p class="profiles-name">+234 808 289 5378</p>
+              </div>
+              <p class="profiles-phone">
+                Name and phone number will be visible to your WhatsApp customers
+                and can be edited from the app on your mobile device.
+              </p>
+
+              <div class="profile-profiles">
+                <img
+                  class="profiles-image"
+                  src="Assets/images/GRAPHIC.png"
+                  alt=""
+                />
+                <p class="profiles-name">Graphic designer</p>
+                <img
+                  class="profiles-graphic"
+                  src="Assets/images/PEN.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="profile-profiles">
+                <img
+                  class="profiles-image"
+                  src="Assets/images/LOCATION.png"
+                  alt=""
+                />
+                <p class="profiles-name">27 Okoya st, Malu, Lagos, Nigeria</p>
+                <img
+                  class="profiles-graphic"
+                  src="Assets/images/PEN.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="profile-profiles">
+                <img
+                  class="profiles-image"
+                  src="Assets/images/GMAIL.png"
+                  alt=""
+                />
+                <p class="profiles-name">titilopeadebariuthman@g mail.com</p>
+                <img
+                  class="profiles-graphic"
+                  src="Assets/images/PEN.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="profile-profiles website">
+                <img
+                  class="profiles-image"
+                  src="Assets/images/WEBSITE.png"
+                  alt=""
+                />
+                <p class="profiles-name">Website</p>
+                <img
+                  class="profiles-graphic"
+                  src="Assets/images/PEN.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="profile-profiles">
+                <img
+                  class="profiles-image"
+                  src="Assets/images/MONDAY.png"
+                  alt=""
+                />
+                <p class="profiles-name">Monday Open 24 hours</p>
+                <img
+                  class="profiles-graphic"
+                  src="Assets/images/WEBSITE.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="profile-profile">
+                <p class="profiles-name">Tuesday Open 24 hours</p>
+              </div>
+
+              <div class="profile-profile">
+                <p class="profiles-name">WednesdayOpen 24 hours</p>
+              </div>
+
+              <div class="profile-profile">
+                <p class="profiles-name">Thursday Open 24 hours</p>
+              </div>
+
+              <div class="profile-profile">
+                <p class="profiles-name">Friday Open 24 hours</p>
+              </div>
+
+              <div class="profile-profile">
+                <p class="profiles-name">Saturday Open 24 hours</p>
+              </div>
+
+              <div class="profile-profile">
+                <p class="profiles-name">Sunday Open 24 hours</p>
+              </div>
+              <div class="profile-profiles">
+                <img
+                  class="profiles-image"
+                  src="Assets/images/CATALOGUE 1.png"
+                  alt=""
+                />
+                <p class="profiles-name">
+                  Graphics Design | Branding | Customize | Printing
+                </p>
+                <img
+                  class="profiles-graphic"
+                  src="Assets/images/PEN.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="status-space"></div>
+
+              <p class="about">About</p>
+              <div class="profile-profiles abouts">
+                <img
+                  class="profiles-image"
+                  src="Assets/images/ABOUT.png"
+                  alt=""
+                />
+                <p class="profiles-name">Available</p>
+                <img
+                  class="profiles-graphic"
+                  src="Assets/images/PEN.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="status-space"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat Section -->
+        <div class="chat-section">
+          <div class="chat-header">
+            <div class="chat-header-profile">
+              <img
+                class="techtutor-img"
+                src="images/techtutor.png"
+                alt="Tech Tutor"
+              />
+              <div class="chat-header-info">
+                <p class="chat-number">+234 703 536 5907</p>
+                <p class="chat-lastseen">last seen today at 11:10 am</p>
+              </div>
+            </div>
+            <div class="chat-header-img">
+              <img
+                class="status-icon"
+                src="Assets/images/catalogue.png"
+                alt="Catalogue"
+              />
+              <img
+                class="status-icon"
+                src="Assets/images/search.png"
+                alt="Search"
+              />
+              <img
+                class="status-icon"
+                src="Assets/images/dots.png"
+                alt="More"
+              />
+            </div>
+          </div>
+
+          <div class="chat-body">
+            <div class="chat-body-container">
+              <!-- Messages -->
+              <div class="new-container">
+                <div class="new-time">
+                  <p class="message">
+                    The work I have been talking to you about?
+                  </p>
+                  <p class="message-time">10:21 am</p>
+                </div>
+              </div>
+
+              <div class="hello-container">
+                <div class="hello-time">
+                  <p class="hello">Hi</p>
+                  <p class="time">10:25 am</p>
+                </div>
+              </div>
+
+              <div class="new-container">
+                <div class="new-time">
+                  <p class="message">How are you?</p>
+                  <p class="message-time">12:44 am</p>
+                </div>
+              </div>
+
+              <div class="today-container">
+                <p class="today">Today</p>
+              </div>
+
+              <div class="unread-container">
+                <p class="unread">3 UNREAD MESSAGES</p>
+              </div>
+
+              <div class="hello-container">
+                <div class="hello-time">
+                  <p class="hello">Hello</p>
+                  <p class="time">10:21 am</p>
+                </div>
+              </div>
+
+              <div class="front-container">
+                <div class="you-container">
+                  <div class="you-front">
+                    <div class="front-tool"></div>
+                    <p class="you">You</p>
+                    <p class="front">Frontend dev</p>
+                  </div>
+                </div>
+                <div
+                  class="front-image-container"
+                  id="interactiveImageContainer"
+                >
+                  <img
+                    class="front-image"
+                    src="images/tech tutor.png"
+                    alt="Tech Tutor"
+                    id="interactiveImage"
+                  />
+                  <div class="front-image-tool">10:21 am</div>
+                </div>
+
+                <!-- Overlay for larger image -->
+                <div class="overlay" id="imageOverlay">
+                  <img
+                    src="images/tech tutor.png"
+                    alt="Tech Tutor"
+                    id="largeImage"
+                  />
+                </div>
+              </div>
+
+              <div class="start-container">
+                <div class="start-time">
+                  <p class="start">
+                    This is the start date for frontend Web Development
+                  </p>
+                  <p class="times">10:21 am</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-input">
+            <img
+              class="icon"
+              src="Assets/images/wink-emoji.png"
+              alt="Emoji"
+              id="emoji-btn"
+            />
+            <img class="icon" src="Assets/images/plus-sign.png" alt="Add" />
+            <input type="text" placeholder="Type a message" />
+            <img
+              class="icon send-icon"
+              src="Assets/images/send.png"
+              alt="Send"
+            />
+            <!-- <img class="icon" src="Assets/images/voice.png" alt="Voice" /> -->
+
+            <!-- Emoji Picker -->
+            <div id="emoji-picker" style="display: none">
+              <span class="emoji" data-emoji="😊">😊</span>
+              <span class="emoji" data-emoji="😂">😂</span>
+              <span class="emoji" data-emoji="😍">😍</span>
+              <span class="emoji" data-emoji="😎">😎</span>
+              <span class="emoji" data-emoji="😢">😢</span>
+              <span class="emoji" data-emoji="😡">😡</span>
+              <!-- Add more emojis as needed -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Advertise Html -->
+    <div class="advertise-container chats" style="display: none;">
+      <div class="advertise-body">
+        <img class="advertise-img" src="images/advertise.png" alt="" />
+        <p class="advertise-bring">
+          Bring in new customers with Facebook & Instagram ads
+        </p>
+        <p class="advertise-text">
+          Easily create ads that show on Facebook & Instagram and lead people to
+          WhatsApp chats with you.
+        </p>
+        <div class="adverise-wrap">
+          <div class="reach">
+            <img src="Assets/images/reach (1).png" alt="" />
+            <p class="people">Reach people locally</p>
+          </div>
+          <div class="reach">
+            <img src="Assets/images/control.png" alt="" />
+            <p class="people">Control your ad budget</p>
+          </div>
+          <div class="reach">
+            <img src="Assets/images/pause.png" alt="" />
+            <p class="people">Pause or stop ads anytime</p>
+          </div>
+        </div>
+        <p class="advertise-name">
+          Your business name and photo will be shared with Meta in order to
+          create your ad. <span>Learn more</span>
+        </p>
+        <div class="button-container">
+          <button class="cancel">Cancel</button>
+          <button class="continue">Continue in Facebook</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

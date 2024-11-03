@@ -1,0 +1,150 @@
+.status-history {
+    background-color: #ffffff;
+    width: 40%;
+    min-width: 300px;
+    display: none;
+}
+
+.status-personal {
+    scrollbar-width: thin;
+    height: 597px; 
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #f0f2f5;
+}
+
+.status-history .status-container {
+    padding: 14px 25px 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.status-container .status-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.status-container .status-plus-icon {
+    height: 24px;
+    cursor: pointer;
+}
+
+.status-container .status-dot-icon {
+    height: 18px;
+    cursor: pointer;
+}
+
+.all-status-container {
+    background-color: #fff;
+}
+
+.all-status-container .my-status {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 5px 15px 15px 15px;
+    box-shadow: 1px 2px 8px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.all-status-container .my-status .profile-container {
+    position: relative;
+}
+
+.all-status-container .my-status .profile-container .plus-tool{
+    position: absolute;
+    top: 25px;
+    left: 26px;
+    background-color: green;
+    height: 18px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    color: #fff;
+    outline: 2px solid rgb(255, 255, 255);
+}
+
+.all-status-container .my-status .profile-image {
+    height: 40px;
+    border-radius: 20px;
+}
+
+.all-status-container .my-status .status-name-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.all-status-container .my-status .status-name-container .status-name{
+    font-size: 15px;
+    color: #000000b1;
+}
+
+.all-status-container .my-status .status-name-container .add-status-day{
+    font-size: 13px;
+    color: #0000009d;
+}
+
+.status-personal .all-status-container .status-space {
+    background-color: #f0f2f5;
+    height: 10px;
+}
+
+.status-personal .all-status-container .other-status-container {
+    background-color: #fff;
+    min-height: 600px;
+}
+
+.status-personal .all-status-container .other-status-container .other-status .recent-status{
+    padding: 25px;
+    color: green;
+    font-size: 16px;
+}
+
+.other-status-container .other-status .status-update {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 8px; 
+    cursor: pointer;  
+}
+
+.other-status-container .other-status .status-update:hover {
+    background-color: #f0f2f5;
+}
+
+.other-status-container .other-status .status-update .profile-image {
+    height: 40px;
+    border-radius: 20px;
+    outline: 2px dashed green;
+    border: 2px solid #fff;
+}
+
+.other-status-container .other-status .status-update .status-update-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.other-status-container .other-status .status-update .status-update-container .status-name{
+    font-size: 15px;
+    color: #000000;
+}
+
+.other-status-container .other-status .status-update .status-update-container .add-status-day{
+    font-size: 15px;
+    color: #00000082;
+}
+
+.horizontal-rule-status {
+    width: 340px;
+    border: 0.2px solid rgba(234, 234, 234, 0.616);
+    border-radius: 1px;
+    margin-left: 65px;
+}

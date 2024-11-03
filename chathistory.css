@@ -1,0 +1,202 @@
+.chat-history {
+    background-color: #ffffff;
+    width: 40%;
+    min-width: 300px;
+}
+
+.chat-personal {
+    scrollbar-width: thin;
+    height: 400px; 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.chat-history .chat-container {
+    padding: 14px 30px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.chat-container .chat-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 8px;
+}
+
+.chat-container .chat-history-img {
+    height: 24px;
+    cursor: pointer;
+}
+
+.chat-history .search-container {
+    padding: 3px 10px 8px 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-container .search-icon {
+    height: 18px;
+    position: absolute;
+    left: 31px;
+}
+
+.search-container .search-box {
+    background-color: #f0f2f5;
+    height: 40px;
+    width: 410px;
+    min-width: 280px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 75px;
+    font-size: 15px;
+}
+
+.chat-history .chat-history-text {
+    display: flex;
+    padding: 0 10px 10px 14px;
+    gap: 10px;
+    align-items: center;
+}
+
+.chat-history-text .history-text{
+    background-color: #f2f4f7;
+    padding: 6px 12px 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.chat-history-text .history-text:nth-child(1){
+    background-color: #e7fce3;
+}
+
+.chat-history .notification-container {
+    background-color: #53bdeb;
+    display: grid;
+    grid-template-columns: 15px 1fr 15px;
+    gap: 20px;
+    padding: 18px 10px 18px 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-container .notification-icon-container .notification-icon, 
+.notification-container .notification-icon {
+    height: 18px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.notification-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-icon-container .notification-tool {
+    height: 35px;
+    width: 35px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.notification-container .notification-text-container {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.chat-history .chat-personal .chat-techtutor{
+    background-color: #f0f2f5;
+    padding: 14px 0 14px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.chat-history .chat-personal .chat-techtutor:hover{
+    background-color:  #f0f2f5;
+}
+
+.chat-history .chat-personal .techtutor{
+    background-color: #fff;
+}
+
+.chat-personal .chat-techtutor .techtutor-image{
+    height: 40px;
+    border-radius: 20px;
+}
+
+.chat-personal .chat-techtutor .techtutor-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    padding-right: 14px;
+}
+
+.chat-personal .chat-techtutor .techtutor-number-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.chat-personal .chat-techtutor .techtutor-number-container .techtutor-number{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.chat-personal .chat-techtutor .techtutor-number-container .techtutor-time{
+    font-size: 13px;
+    color: #868686;
+}
+
+.techtutor-brief-chat {
+    font-size: 13px;
+}
+
+.horizontal-rule {
+    width: 340px;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 1px;
+    margin-left: 72px;
+}
+
+@media (max-width: 1200px) {
+    .chat-personal {
+        max-height: 318px;
+    }
+
+    .chat-history .notification-container {
+        gap: 20px;
+        padding: 8px 7px 8px 20px;
+    }
+
+    .notification-container .notification-text-container {
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .chat-personal .chat-techtutor .techtutor-number-container .techtutor-number{
+        font-size: 12px;
+    }
+    
+    .chat-personal .chat-techtutor .techtutor-number-container .techtutor-time{
+        font-size: 12px;
+    }
+
+    .chat-personal .chat-techtutor .techtutor-image{
+        height: 35px;
+    }
+
+    .chat-personal .chat-techtutor .techtutor-container{
+        padding-right: 12px;
+    }
+    
+}

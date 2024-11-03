@@ -1,0 +1,119 @@
+.profiles {
+    background-color: #ffffff;
+    width: 40%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+  }
+  
+  .profiles-scroll {
+    scrollbar-width: thin;
+    height: 597px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  .profiles .profiles-container {
+    padding: 14px 15px 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profiles .profiles-background {
+    height: 170px;
+    background-color: rgba(44, 85, 73, 0.073);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .profiles-background .profiles-image {
+    height: 130px;
+    border-radius: 90px;
+    border: 7px solid #fff;
+    margin-bottom: -90px;
+  }
+
+  .profiles-background .profiles-dots {
+    position: absolute;
+    height: 40px;
+    left: 260px;
+    bottom: 30px;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 20px;
+  }
+
+  .profiles-info-container {
+    margin-top: 25px;
+  }
+
+  .profiles-info-container .profiles-phone {
+    padding: 0 30px 30px 76px;
+    color: #808080;
+    line-height: 18px;
+    font-size: 12px;
+  }
+  
+  .profile-profiles {
+    display: grid;
+    grid-template-columns: 20px 1fr 40px;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 0 15px 20px;
+  }
+
+  .profile-profile {
+    padding: 20px 10px 20px 64px;
+  }
+
+  .profile-profile .profiles-name {
+    font-size: 15px;
+    color: #595959;
+  }
+
+  .website {
+    padding-bottom: 40px;
+  }
+
+  .profile-profiles .profiles-graphic {
+    height: 24px;
+  }
+
+  .profile-profiles .profiles-image {
+    height: 22px;
+  }
+
+  .profile-profiles .profiles-name {
+    font-size: 15px;
+    color: #595959;
+  }
+
+  .profile-profiles .email {
+    width: 70px;
+  }
+
+  .status-space {
+    background-color: #f0f2f5;
+    height: 40px;
+}
+
+.about {
+    padding: 25px 0 15px 30px;
+    font-size: 14px;
+    color: rgb(0, 177, 9);
+}
+
+.abouts {
+    height: 70px;
+}
+
+
+
+  
+  

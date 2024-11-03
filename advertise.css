@@ -1,0 +1,116 @@
+.advertise-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.795);
+  z-index: 3000;
+}
+
+.advertise-body {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0 6px 12px rgba(0, 55, 14, 0.454);
+  max-width: 500px;
+  min-height: 640px;
+  text-align: center;
+}
+
+.advertise-body .advertise-img {
+  height: 135px;
+}
+
+.advertise-bring {
+  font-size: 1.2rem;
+  color: #4e4e4e;
+  margin: 12px 60px 14px;
+}
+
+.advertise-text {
+  font-size: 0.9rem;
+  line-height: 25px;
+  text-align: left;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.adverise-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 15px 50px;
+}
+
+.reach {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.reach img {
+  height: 30px;
+}
+
+.people {
+  font-size: 0.9rem;
+  color: #5c5c5c;
+  margin-left: 5px;
+}
+
+.advertise-name {
+  font-size: 0.9rem;
+  text-align: left;
+  line-height: 25px;
+  color: #4c4b4b;
+  margin: 15px 0 0;
+}
+
+.advertise-name span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.advertise-name span:hover {
+  text-decoration: underline;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 70px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cancel {
+  background-color: #ffffff;
+  color: green;
+  border: 1px solid rgba(0, 128, 0, 0.11);
+}
+
+.continue {
+  background-color: green;
+  color: #fff;
+}

@@ -1,0 +1,127 @@
+.business {
+    background-color: #ffffff;
+    width: 40%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.business .tools-business {
+    padding: 18px 15px 15px 25px;
+    font-size: 14px;
+    color: green;
+}
+
+.business .business-container {
+    padding: 14px 15px 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.barce-business {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 13px 15px 30px 25px;
+    cursor: pointer;
+}
+
+.holder:hover {
+    background-color: #f0f2f5;
+}
+
+.barce-business .business-image {
+    height: 20px;
+    padding-right: 14px;
+}
+
+.business-holder-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barce-business .business-name {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex-shrink: 0;
+}
+
+.barce-business .business-name .barce-name{
+    font-size: 15px;
+    color: #000000;
+}
+
+.barce-business .business-name .add-business-day {
+    font-size: 13px;
+    color: #0000009d;
+}
+
+.business-find {
+    padding: 10px 15px 5px;
+}
+
+.verifys {
+    height: 18px;
+}
+
+.barce-business .holder-business-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.business-follow {
+    border: 1px solid rgba(0, 128, 0, 0.11);
+    padding: 10px 14px;
+    color: green;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 14px;
+    margin-left: 115px;
+}
+
+.temsi-follow {
+    border: 1px solid rgba(0, 128, 0, 0.11);
+    padding: 10px 14px;
+    color: green;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 14px;
+    margin-left: 160px;
+}
+
+.bbcs-follow {
+    border: 1px solid rgba(0, 128, 0, 0.11);
+    padding: 10px 14px;
+    color: green;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 14px;
+    margin-left: 154px;
+}
+
+.ruggedy-follow {
+    border: 1px solid rgba(0, 128, 0, 0.11);
+    padding: 10px 14px;
+    color: green;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 14px;
+    margin-left: 120px;
+}
+
+.business .business-hr {
+    height: 2px;
+    background-color: #fcfcfc1a; 
+    width: 100%; 
+    z-index: 2000;
+}
+  
+
+
+
