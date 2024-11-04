@@ -1,14 +1,21 @@
+
 .chat-history {
     background-color: #ffffff;
     width: 40%;
     min-width: 300px;
+    max-height: 100%; /* Ensures chat-history does not exceed main-body-container */
+    display: flex;
+    flex-direction: column; /* Enables stacking child elements vertically */
+    box-sizing: border-box;
+    overflow: hidden; /* Keeps content inside */
 }
 
 .chat-personal {
     scrollbar-width: thin;
-    height: 400px; 
+    height: 60%; /* Takes up remaining space within chat-history */
     overflow-y: auto;
     overflow-x: hidden;
+    /* padding-bottom: 50px; */
 }
 
 .chat-history .chat-container {
@@ -169,10 +176,6 @@
 }
 
 @media (max-width: 1200px) {
-    .chat-personal {
-        max-height: 318px;
-    }
-
     .chat-history .notification-container {
         gap: 20px;
         padding: 8px 7px 8px 20px;

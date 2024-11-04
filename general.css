@@ -28,10 +28,11 @@ body {
 }
 
 .downbody {
-  height: 655px;
+  height: 775px;
   background-color: lightgray;
   position: relative;
 }
+
 
 .main-body-container {
   width: 97.5%;
@@ -41,21 +42,24 @@ body {
   right: 20px;
   left: 20px;
   display: flex;
+  box-sizing: border-box; /* Prevents padding from affecting width/height */
 }
+
 
 .active {
   display: block; 
 }
-
 
 @media (max-width: 768px) {
 
   .main-body-container {
       right: 20px;
       left: 10px;
+      width: calc(100% - 60px);
     }
 
 }
+
 
 
 

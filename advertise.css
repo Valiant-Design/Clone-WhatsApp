@@ -1,9 +1,9 @@
 .advertise-container {
   position: fixed;
-  top: 0;
+  top: 50px;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
   border-radius: 3px;
   box-shadow: 0 6px 12px rgba(0, 55, 14, 0.454);
   max-width: 500px;
-  min-height: 640px;
+  min-height: 600px;
   text-align: center;
 }
 
@@ -113,4 +113,12 @@ button:hover {
 .continue {
   background-color: green;
   color: #fff;
+}
+
+@media (max-width: 1200px) {
+
+  .advertise-container {
+      height: 80vh;
+    }
+
 }
