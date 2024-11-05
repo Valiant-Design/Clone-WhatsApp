@@ -2,14 +2,16 @@
   background-color: #ffffff;
   width: 40%;
   min-width: 320px;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   display: none;
 }
 
 .settings-scroll {
   scrollbar-width: thin;
-  height: 597px;
+  height: 82.5%;
   overflow-y: auto;
   overflow-x: hidden;
 }

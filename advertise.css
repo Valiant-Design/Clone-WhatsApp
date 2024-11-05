@@ -1,9 +1,9 @@
 .advertise-container {
   position: fixed;
-  top: 50px;
+  top: 0;
   left: 0;
   width: 100vw;
-  height: 85vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,18 +17,18 @@
   border-radius: 3px;
   box-shadow: 0 6px 12px rgba(0, 55, 14, 0.454);
   max-width: 500px;
-  min-height: 600px;
+  min-height: 300px;
   text-align: center;
 }
 
 .advertise-body .advertise-img {
-  height: 135px;
+  height: 130px;
 }
 
 .advertise-bring {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #4e4e4e;
-  margin: 12px 60px 14px;
+  margin: 10px 60px;
 }
 
 .advertise-text {
@@ -36,7 +36,7 @@
   line-height: 25px;
   text-align: left;
   color: #666;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .adverise-wrap {
@@ -45,7 +45,7 @@
   align-items: start;
   justify-content: center;
   gap: 10px;
-  margin: 20px 15px 50px;
+  margin: 20px 15px 40px;
 }
 
 .reach {
@@ -57,7 +57,7 @@
 }
 
 .reach img {
-  height: 30px;
+  height: 28px;
 }
 
 .people {
@@ -87,7 +87,7 @@
   display: flex;
   justify-content: flex-end;
   gap: 10px;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 button {
@@ -115,7 +115,7 @@ button:hover {
   color: #fff;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
 
   .advertise-container {
       height: 80vh;
